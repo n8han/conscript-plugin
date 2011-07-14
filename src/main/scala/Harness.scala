@@ -12,6 +12,7 @@ object Harness extends Plugin {
   val csRun = InputKey[Unit]("cs-run",
       "Run a named launchconfig, with parameters")
   override val settings: Seq[Project.Setting[_]] = Seq(
+    resolvers += Classpaths.typesafeResolver,
     libraryDependencies <+= (sbtVersion) { sbtv =>
       "org.scala-tools.sbt" % "launcher-interface" % sbtv % "provided"},
     conscriptBase <<= (sourceDirectory in Compile) / "conscript",
