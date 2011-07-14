@@ -14,7 +14,7 @@ object Harness extends Plugin {
   override val settings: Seq[Project.Setting[_]] = Seq(
     resolvers += Classpaths.typesafeResolver,
     libraryDependencies <+= (sbtVersion) { sbtv =>
-      "org.scala-tools.sbt" % "launcher-interface" % sbtv % "provided"},
+      "org.scala-tools.sbt" % "launcher-interface_2.8.1" % sbtv % "provided"},
     conscriptBase <<= (sourceDirectory in Compile) / "conscript",
     conscriptOutput <<= target / "conscript",
     conscriptBoot <<= conscriptOutput / "boot",
