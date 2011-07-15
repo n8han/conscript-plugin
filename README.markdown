@@ -1,15 +1,12 @@
-This is a plugin for making your own [Conscript][cs] apps. Use it by adding
-a plugin source dependency to your project.
+This is a plugin for making your own [Conscript][cs] apps. Use it by
+adding a plugin dependency to your project.
 
-**project/plugins/project/build.scala**
+**project/plugins/build.sbt**
 
 ```scala
-import sbt._
-
-object PluginDef extends Build {
-  lazy val root = Project("plugins", file(".")) dependsOn( conscript )
-  lazy val conscript = uri("git://github.com/n8han/conscript-plugin.git#0.1.2")
-}
+libraryDependencies ++= Seq(
+  "net.databinder" %% "conscript-plugin" % "0.3.1_sbt0.10.1"
+)
 ```
 
 [cs]: https://github.com/n8han/conscript#readme
