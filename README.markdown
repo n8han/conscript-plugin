@@ -1,12 +1,12 @@
-This is a plugin for making your own [Conscript][cs] apps. Use it by
-adding a plugin dependency to your project.
+This is a plugin for making your own [Conscript][cs] apps. Get started
+with this [giter8][g8] template project.
 
-**project/plugins/build.sbt**
+    g8 n8han/conscript
 
-```scala
-libraryDependencies ++= Seq(
-  "net.databinder" %% "conscript-plugin" % "0.3.1_sbt0.10.1"
-)
-```
+It has conscript-plugin preconfigured and comes with skeletal sources
+for your app.
 
 [cs]: https://github.com/n8han/conscript#readme
+[g8]: https://github.com/n8han/giter8#readme
+
+
