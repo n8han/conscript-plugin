@@ -32,8 +32,9 @@ script name) is "app".
 The `cs-run` task does a publish-local for the project, produces a
 temporary finished launchconfig, then invokes the launcher in a
 separate process. This is a close approximation of how the app will
-actually be launched by end-users. Arguments appended to the task
-will be passed on to the launched program:
+actually be launched in the script produced by Conscript's `cs`
+command. Arguments appended to the task will be passed on to the
+launched program:
 
     cs-run app goodbye world
 
