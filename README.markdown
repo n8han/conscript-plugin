@@ -16,8 +16,11 @@ preconfigured, and comes with skeletal sources for your app.
 Use
 ---
 
-Once you've started an sbt interactive session with the plugin
-loaded, you'll have a few additional tasks (commands) available.
+Start an sbt 0.10 interactive session in your project directory.
+
+    $ sbt # or whatever you've called your sbt 0.10 script
+
+You'll have a few additional tasks (commands) available.
 
     cs-run app
 
