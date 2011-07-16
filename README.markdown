@@ -38,13 +38,20 @@ launched program:
 
     cs-run app goodbye world
 
-Since the template app also includes a standard runnable class, you
-can run it directly with sbt's `run` task. This is a much faster way
-to test the app as you are developing, since it avoids the overhead of
-publishing and launching in a separate process. It is also similar to
-running it deployed as a runnable jar that has been built either
-through [assembly][assembly] or [proguard][proguard]--both
-alternatives to Conscript's local-repository-based launching.
+Alternate Launch
+----------------
+
+If your app (like the template app) includes a standard runnable
+class, you can run it directly with sbt's `run` task. This is a much
+faster way to test the app as you are developing, since it avoids the
+overhead of publishing and launching in a separate process.
+
+    run goodbye world
+
+It is also similar to running it deployed as a runnable jar that has
+been built either through [assembly][assembly] or
+[proguard][proguard]--the most common alternatives to Conscript's
+local-repository-based launching.
 
 [assembly]: https://github.com/eed3si9n/sbt-assembly
 [proguard]: https://github.com/siasia/xsbt-proguard-plugin
