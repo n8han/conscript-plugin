@@ -6,7 +6,7 @@ using it by applying this [giter8][g8] template project.
 
     g8 n8han/conscript
 
-The sbt 0.10 project it creates will have conscript-plugin
+The sbt 0.11 project it creates will have conscript-plugin
 preconfigured, and comes with skeletal sources for your app.
 
 [cs]: https://github.com/n8han/conscript#readme
@@ -16,9 +16,9 @@ preconfigured, and comes with skeletal sources for your app.
 Use
 ---
 
-Start an sbt 0.10 interactive session in your project directory.
+Start an sbt 0.11 interactive session in your project directory.
 
-    $ sbt # or whatever you've called your sbt 0.10 script
+    $ sbt # or whatever you've called your sbt 0.11 script
 
 You'll have a few additional tasks (commands) available.
 
