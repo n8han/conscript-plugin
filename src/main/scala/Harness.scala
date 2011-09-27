@@ -11,10 +11,10 @@ object Harness extends Plugin {
       "Write test launchconfig files to conscript-output")
   val csRun = InputKey[Unit]("cs-run",
       "Run a named launchconfig, with parameters")
-  override val settings: Seq[Project.Setting[_]] = Seq(
+  val conscriptSettings: Seq[Project.Setting[_]] = Seq(
     resolvers += Classpaths.typesafeResolver,
     libraryDependencies <+= (sbtVersion) { sbtv =>
-      "org.scala-tools.sbt" % "launcher-interface_2.8.1" % sbtv % "provided"},
+      "org.scala-tools.sbt" % "launcher-interface_2.9.1" % sbtv % "provided"},
     conscriptBase <<= (sourceDirectory in Compile) / "conscript",
     conscriptOutput <<= target / "conscript",
     conscriptBoot <<= conscriptOutput / "boot",
@@ -47,13 +47,13 @@ object Harness extends Plugin {
         val config = args.headOption.map { name =>
           configs(output).find { 
             p => configName(p) == name 
-          }.getOrElse { error("No launchconfig found for " + name) }
-        }.getOrElse { error("Usage: cs-run <appname> [args ...]") }
+          }.getOrElse { sys.error("No launchconfig found for " + name) }
+        }.getOrElse { sys.error("Usage: cs-run <appname> [args ...]") }
         "sbt @%s %s".format(config,
                             args.toList.tail.mkString(" ")
         ) ! match {
           case 0 => ()
-          case n => error("Launched app error code: " + n)
+          case n => sys.error("Launched app error code: " + n)
         }
     }
   }
