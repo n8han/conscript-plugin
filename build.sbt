@@ -4,7 +4,7 @@ name := "conscript-plugin"
 
 organization := "net.databinder"
 
-version := "0.3.3"
+version := "0.3.4"
 
 homepage := Some(url("https://github.com/n8han/conscript"))
 
