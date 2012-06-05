@@ -1,0 +1,18 @@
+
+{
+ "organization":"net.databinder",
+ "name":"conscript-plugin",
+ "version":"0.3.4",
+ "description":"conscript-plugin is an sbt plugin for making conscript apps",
+ "site":"https://github.com/n8han/conscript",
+ "tags":[],
+ "docs":"",
+ "licenses": [{
+   "name": "LGPL v3",
+   "url": "http://www.gnu.org/licenses/lgpl.txt"
+  }],
+ "resolvers": ["https://oss.sonatype.org/content/repositories/releases"],
+ "dependencies": [],
+ "scalas": ["2.9.1"],
+ "sbt": true
+}

@@ -4,6 +4,8 @@ name := "conscript-plugin"
 
 organization := "net.databinder"
 
+description := "conscript-plugin is an sbt plugin for making conscript apps"
+
 version := "0.3.4"
 
 homepage := Some(url("https://github.com/n8han/conscript"))
@@ -27,3 +29,4 @@ pomExtra := (
     </developer>
   </developers>)
 
+seq(lsSettings :_*)
