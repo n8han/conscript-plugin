@@ -6,6 +6,24 @@ organization := "net.databinder"
 
 version := "0.3.3"
 
-publishTo := Some("Scala Tools Nexus" at "http://nexus.scala-tools.org/content/repositories/releases/")
+homepage := Some(url("https://github.com/n8han/conscript"))
 
-credentials += Credentials(Path.userHome / ".ivy2" / ".credentials")
+publishTo :=
+  Some("releases" at
+       "https://oss.sonatype.org/service/local/staging/deploy/maven2")
+
+licenses := Seq("LGPL v3" -> url("http://www.gnu.org/licenses/lgpl.txt"))
+
+pomExtra := (
+  <scm>
+    <url>git@github.com:n8han/conscript-plugin.git</url>
+    <connection>scm:git:git@github.com:n8han/conscript-plugin.git</connection>
+  </scm>
+  <developers>
+    <developer>
+      <id>n8han</id>
+      <name>Nathan Hamblen</name>
+      <url>http://github.com/n8han</url>
+    </developer>
+  </developers>)
+
