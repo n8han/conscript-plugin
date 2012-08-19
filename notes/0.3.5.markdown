@@ -1,0 +1,2 @@
+Updates launcher interface dependency for sbt 0.12.0. Use this version
+for (and only for) conscript applications compiled with sbt 0.12.0+
