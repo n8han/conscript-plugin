@@ -6,7 +6,7 @@ organization := "net.databinder"
 
 description := "conscript-plugin is an sbt plugin for making conscript apps"
 
-version := "0.3.4"
+version := "0.3.5"
 
 homepage := Some(url("https://github.com/n8han/conscript"))
 
