@@ -53,5 +53,5 @@ been built either through [assembly][assembly] or
 [proguard][proguard]--the most common alternatives to Conscript's
 local-repository-based launching.
 
-[assembly]: https://github.com/eed3si9n/sbt-assembly
-[proguard]: https://github.com/siasia/xsbt-proguard-plugin
+[assembly]: https://github.com/sbt/sbt-assembly
+[proguard]: https://github.com/adamw/xsbt-proguard-plugin
